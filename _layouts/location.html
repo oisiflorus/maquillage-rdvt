@@ -7,10 +7,11 @@ layout: default
   <p>
     <a href="/{{ page.collection }}">
       <i class="fas fa-map-marked" title="liste des lieux"></i> autres lieux à
-      {{ page.collection | capitalize }}</a
-    >
+      {{ page.collection | capitalize }}</a>
   </p>
   <h1>{{ page.nom }}</h1>
   {%- include location-metas.html -%}
+  ## Mes pratiques
   {{ content }}
+  <img src="/media/{{ page.photo }}" alt="{{ page.nom }}{{ page.prenom }}">
 </article>
